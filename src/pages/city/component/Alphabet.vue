@@ -9,6 +9,9 @@
         @touchend="handleTouchEnd"
         @click="handleLetterClick"
     >
+    <!-- .prevent 事件修饰符，去除默认行为
+    白屏：1、浏览器不支持Promise babel-ployfill
+         2、webpack-dev-server问题 -->
       {{item}}
     </li>
   </ul>
